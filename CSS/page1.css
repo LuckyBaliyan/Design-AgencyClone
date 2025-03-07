@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Alumni+Sans+Pinstripe:ital@0;1&family=Amatic+SC:wght@400;700&family=Arima:wght@100..700&family=Arimo:ital,wght@0,400..700;1,400..700&family=Chewy&family=Concert+One&family=Danfo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+}
+
+:root{
+    --primaryblack-text:#000000;
+    --primaryblack:#0F0F0F;
+    --primaryWhite:#FFFFFF;
+    --links:#bdbfb9;
+    --subheadings:#838383;
+    --green:#D9FF06;
+    --pink:#FFD7E7;
+    --bblue:#FAD3E2;
+}
+
+
+.main{
+    width:100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .wrraper-image{
+    width:100%;
+    height:180vh;
+    position:relative;
+}
+
+.wrraper-image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.left-fixed{
+    position: fixed;
+    width:7%;
+    height:100vh;
+    z-index: 1000;
+    padding:2.4vw 1vw;
+    padding-left:2vw;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.left-fixed .lf-l{
+   width:4.6vw;
+   height:4vw;
+   overflow: hidden;
+   mix-blend-mode: difference;
+}
+
+.lf-l img{
+    width:100%;
+    height:100%;
+    transform: scale(1.3);
+    object-fit: cover;
+}
+
+.lf-r div {
+   transform: translateX(calc(calc(7%) - 50%)) rotate(-90deg);
+   margin-bottom: 10vw;
+   mix-blend-mode: difference;
+}
+
+.lf-r div>a{
+    text-decoration: none;
+    color:var(--primaryblack-text);
+    font-family:Neue Machina;
+    font-size:24px;
+    font-weight: 600;
+    mix-blend-mode: difference;
+    cursor: pointer;
+}
+
+.right-fixed{
+    position: fixed;
+    width:20%;
+    height:fit-content;
+    left:calc(100% - 20%);
+    top:0%;
+    z-index:10002;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding:2.4vw 1vw;
+}
+
+.right-fixed .fd{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    transform: scale(1.2);
+}
+
+.right-fixed .fd a{
+    text-decoration: none;
+    color:var(--links);
+    font-family: Neue Machina;
+    font-size: 35.6px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.w,.A,.ar,.s,.c{
+    display: flex;
+    flex-direction: column;
+    height:43px;
+    text-wrap:wrap;
+    overflow-y: hidden;
+    gap:-3vw;
+}
+
+.text:last-child{
+    transform: translateY(-10%);
+}
+
+.text{
+    display:flex;
+}
+
+.overlay{
+    width:100%;
+    height:180vh;
+    position: absolute;
+    top:0%;
+    padding:3vw 15.88vw;
+    overflow: hidden;
+}
+
+.overlay .h,.h1,.h2,.h3{
+    display: flex;
+    width:100%;
+    height:36vh;
+    white-space: nowrap;
+    transform:translateY(10%) scaleX(1.3);
+    overflow: hidden;
+}
+
+.h3{
+    margin-bottom:2vw;
+}
+
+
+.overlay .h,.h1,.h2,.h3 div{
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    line-height: .6;
+    font-size: 21.5vw;
+    letter-spacing: -12px;
+    white-space: nowrap;
+    transition: all 1.1s ease;
+    color:var(--green);
+    filter:brightness(85%) contrast(120%);
+}
+
+.main2{
+    width:100%;
+    min-height:180vh;
+    background-color: var(--primaryblack);
+    position:absolute;
+    top:calc(180vh - 19%);
+    border-radius:8vw;
+    padding:12vw 4vw;
+}
+
+.lf-r div a.color{
+    color:var(--primaryWhite);
+}
+
+
+
+.wrapper h5{
+    font-family:Roboto;
+    font-size:1.2rem;
+    font-weight:400;
+    color:var(--green);
+    line-height: 1.4;
+}
+
+.wrapper .para-container{
+    margin-top: 1rem;
+}
+
+.wrapper .para-container div{
+    overflow: hidden;
+}
+
+.wrapper .para-container div p{
+    font-family: Roboto;
+    font-size: 3.9vw;
+    letter-spacing: -2px;
+    word-spacing: -1.2px;
+    line-height: 1.1;
+    font-weight: 300;
+    margin-top:.1rem;
+    color:var(--primaryWhite);
+    transform: translateY(100%);
+}
+
+.wrapper button{
+    text-decoration: none;
+    margin-top:2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1rem;
+    padding:.9rem 1.6rem;
+    font-size: 1.1rem;
+    font-family: Roboto;
+    font-weight: 400;
+    color:var(--primaryblack-text);
+    border-radius: 24px;
+    cursor: pointer;
+    background-color: var(--primaryWhite);
+    overflow: hidden;
+    transition: all .3s ease-out;
+    position: relative;
+}
+.wrapper button p{
+    z-index:2002;
+    pointer-events: none;
+}
+.wrapper button span{
+    width:1.3rem;
+    height: 1.3rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #D9FF06;
+    padding:.3vw;
+    overflow: hidden;
+    transition:all .3s ease-out;
+    position: relative;
+    pointer-events: none;
+}
+
+
+
+.anim{
+    position:absolute;
+    width:1.3rem;
+    height:1.3rem;
+    border-radius: 50%;
+    background-color:var(--green);
+    left:80%;
+    z-index:200;
+    pointer-events: none;
+}
+
+.wrapper button span .arrow-container{
+    width:12px;
+    aspect-ratio: 1;
+    transform: translate(-100%,100%);
+    transition: all .3s ease-out;
+    z-index: 2001;
+}
+
+.arrow-container img{
+   width:100%;
+   height:100%;
+   object-fit: cover;
+}
+
+
+.wrapper button:hover{
+    transform: scale(1.1);
+}
+
+
+.wrapper button:hover span .arrow-container{
+    transform: translate(0,0);
+}
+
+.section{
+    width:100%;
+    margin-top:25vh;
+    padding:1vw 4vw;
+    padding-top:14vw;
+}
+
+.section .div{
+    overflow: hidden;
+    text-align: center;
+}
+
+.section .div div{
+    font-family: Roboto;
+    font-size:12vw;
+    color:var(--primaryWhite);
+    font-weight: 400;
+    text-align: center;
+    line-height: .85;
+    letter-spacing: -2.54px;
+    transform: translateY(150%);
+    display: inline-block;
+}
+
+.main2 .works{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 4vw;
+    flex-wrap: wrap;
+}
+
+.works .sub-wrapper{
+    width:43%;
+    height:120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:1vw;
+}
+
+.works .media-wrapper{
+    width:100%;
+    height:100%;
+    border-radius: 26px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.media-wrapper img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    background-position: center;
+    transition: all .7s ease-out;
+}
+
+.media-wrapper video{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transition: all .7s ease-out;
+}
+
+.content-wrapper h3{
+  font-family:Neue Machina;
+  color:var(--primaryWhite);
+  font-size: 2.3vw;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.content-wrapper p{
+    font-family:Roboto;
+    color:var(--subheadings);
+    font-size: 1.2vw;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: .6vw;
+}
+
+.media-wrapper:hover img{
+    transform: scale(1.18);
+}
+
+.media-wrapper:hover video{
+    transform: scale(1.18);
+}
+
+.media-overlay{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: #bdbfb900;
+    z-index:100001;
+}
+
+
+.cursor-div{
+    position: fixed;
+    width:14px;
+    height:14px;
+    border-radius: 50%;
+    background-color: var(--green);
+    z-index:10000;
+    opacity: 0;
+    font-family: Roboto;
+    font-size: 2vw;
+    line-height: 1.3;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 3px 2px var(--green);
+    padding:.4rem 0.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: width .3s ease height .3s ease;
+}
+
+.cursor-div p{
+    animation-name: animateMe;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-right: 34px;
+}
+
+@keyframes animateMe {
+    0%{
+        transform: translateX(calc(100% - 36px));
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.descrip{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.para-div-wrapper{
+    margin-top: 5vw;
+    padding:0.2vw 0.4vw;
+}
+
+.para-div{
+    overflow: hidden;
+}
+
+.para-div-wrapper .para-div p{
+    font-family: Roboto;
+    font-size: 2.1rem;
+    color:var(--primaryWhite);
+    font-weight: 300;
+    line-height: 1.14;
+    letter-spacing: -1px;
+    word-spacing: 1px;
+    transform: translateY(90%);
+}
+
+.descrip button{
+    text-decoration: none;
+    margin-top:2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1rem;
+    padding:.9rem 1.6rem;
+    font-size: 1.1rem;
+    font-family: Roboto;
+    font-weight: 400;
+    color:var(--primaryblack-text);
+    border-radius: 24px;
+    background-color: var(--primaryWhite);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    z-index: 10001;
+}
+
+.descrip button p{
+    z-index: 1002;
+}
+
+.descrip button span{
+    width:1.3rem;
+    height: 1.3rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color:var(--green);
+    padding:.3vw;
+    overflow: hidden;
+    transition:all .4s ease-out;
+    position: relative;
+}
+
+.descrip button span .arr{
+    width:12px;
+    aspect-ratio: 1;
+    transform: translate(-100%,100%);
+    transition: all .4s ease-out;
+    z-index: 10002;
+}
+
+.descrip button:hover .arr{
+    transform: translate(0,0);
+}
+svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+path{
+    stroke-width: 2.3px;
+    stroke: var(--primaryWhite);
+    fill: none;
+    transition: all .1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-top: 5vw;
+}
+
+
+
+
+
+
